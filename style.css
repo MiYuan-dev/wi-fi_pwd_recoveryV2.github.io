@@ -1,0 +1,130 @@
+/* ===========
+   GLOBAL
+   =========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body.dark {
+  background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+body.light {
+  background: #f4f7fb;
+  color: #111;
+}
+
+.app {
+  background: rgba(255,255,255,0.06);
+  border-radius: 24px;
+  padding: 25px;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #00f0ff;
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 6px 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: inherit;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  background: #00f0ff;
+  color: #111;
+  border: none;
+  padding: 12px 18px;
+  margin: 6px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.btn:hover { background: #00b4cc; transform: translateY(-2px); }
+.btn:active { transform: scale(0.97); }
+
+.btn-danger { background: #ff4e4e; color: #fff; }
+.btn-danger:hover { background: #e63a3a; }
+
+/* CAMERA PREVIEW */
+.camera-preview {
+  width: 100%;
+  height: 260px;
+  background: #000;
+  border-radius: 16px;
+  margin: 10px 0;
+  border: 2px solid rgba(0,240,255,0.3);
+  overflow: hidden;
+}
+
+/* WIFI DETAILS */
+.wifi-details {
+  background: rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 15px;
+  margin: 15px 0;
+  text-align: left;
+}
+
+.wifi-details h3 { color: #00f0ff; margin-bottom: 8px; }
+.wifi-details p { font-size: 0.9rem; margin-bottom: 5px; }
+
+/* HISTORY */
+.history {
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  padding: 10px;
+  max-height: 150px;
+  overflow-y: auto;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.history-entry {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 5px 0;
+}
+.history-entry:last-child { border-bottom: none; }
+.history-entry span { color: #00f0ff; font-weight: 500; }
+
+/* FOOTER */
+.footer { margin-top: 15px; font-size: 0.8rem; opacity: 0.5; text-align: center; }
+
+/* ANIMATION */
+.fade-in { animation: fadeIn 0.5s ease-in-out; }
+@keyframes fadeIn { from {opacity:0; transform:translateY(15px);} to {opacity:1; transform:translateY(0);} }
+
+/* Social Links */
+.social-links {
+  margin-top: 5px;
+  font-size: 0.85rem;
+}
+
+.social-links a {
+  color: #00f0ff;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #00b4cc;
+  text-decoration: underline;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wi-Fi Password Recovery</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#00f0ff">
+</head>
+<body class="dark">
+  <div class="app">
+    <h1>Wi-Fi QR Scanner</h1>
+
+    <!-- Theme selector -->
+    <select id="themeSelect">
+      <option value="dark" selected>Dark</option>
+      <option value="light">Light</option>
+    </select>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button class="btn" id="scanFileBtn">📂 Scan QR From Image</button>
+      <button class="btn" id="scanCameraBtn">📷 Live Camera Scan</button>
+      <input type="file" id="qrFile" accept="image/*" hidden>
+    </div>
+
+    <!-- Camera Preview -->
+    <div class="camera-preview" id="cameraPreview"></div>
+
+    <!-- Wi-Fi Details -->
+    <div class="wifi-details fade-in" id="wifiDetails">
+      <h3>Wi-Fi Details</h3>
+      <p><b>SSID:</b> <span id="ssid">—</span></p>
+      <p><b>Password:</b> <span id="password">—</span></p>
+      <p><b>Encryption:</b> <span id="encryption">—</span></p>
+      <p><b>Hidden:</b> <span id="hidden">—</span></p>
+      <p><b>Scanned:</b> <span id="scanned">—</span></p>
+      <p><b>Raw QR Data:</b> <small id="rawData">—</small></p>
+    </div>
+
+    <!-- History -->
+    <div class="history fade-in">
+      <h3>Scan History</h3>
+      <div id="historyList"></div>
+      <div class="history-actions">
+        <button class="btn" id="exportBtn">⬇️ Export</button>
+        <button class="btn btn-danger" id="clearHistoryBtn">🗑️ Clear</button>
+      </div>
+    </div>
+
+    <!-- Install PWA -->
+    <button class="btn" id="installBtn" style="display:none;">📱 Install App</button>
+<!-- Footer / Social Links with Icons & Badge -->
+<footer class="footer">
+  <p>© 2025 <b>MiYuan</b>. Designed in the Philippines 🇵🇭</p>
+  <div class="social-links">
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/mi1yuan" target="_blank" rel="noopener noreferrer">
+      <i class="ri-instagram-line">Instagram</i>
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/MiYuan-dev" target="_blank" rel="noopener noreferrer">
+      <i class="ri-github-line social-icon">GitHub</i>
+    </a>
+
+    <!-- First Release -->
+    <a href="https://miyuan-dev.github.io/wi-fi_pwd_recovery.github.io/" target="_blank" rel="noopener noreferrer" class="badge-link">
+      <i class="ri-flashlight-line social-icon">First Release</i>
+    </a>
+  </div>
+</footer>
+  </div>
+
+  <script src="https://unpkg.com/jsqr/dist/jsQR.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
