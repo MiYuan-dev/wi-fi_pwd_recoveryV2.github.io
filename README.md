@@ -24,6 +24,11 @@ This project is built with **HTML, CSS, and JavaScript**, and uses [jsQR](https:
 
 ---
 
+## Open Here
+https://miyuan-dev.github.io/wi-fi_pwd_recoveryV2.github.io/
+
+---
+
 ## Usage
 
 1. **Scan from image:** Click "📂 Scan QR From Image" and select a QR code image.
